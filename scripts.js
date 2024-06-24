@@ -12,8 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadVideos() {
         const perspectives = [
             { name: 'Rick', url: 'https://www.youtube.com/embed/dQw4w9WgXcQ?feature=shared' },
-            { name: 'Harvest Z', url: 'https://www.youtube.com/embed/=A7S_G8Z23_M' },
-            { name: 'Dutch', url: 'https://www.youtube.com/embed/=QON5EM1xhoY' },
+            { name: 'Harvest Z', url: 'https://www.youtube.com/embed/A7S_G8Z23_M' },
+            { name: 'Dutch', url: 'https://www.youtube.com/embed/QON5EM1xhoY' },
+            { name: 'Lilit Highlight', url: 'https://streamable.com/0x9ro7' },
+            { name: 'War Highlight', url: 'https://youtube.com/clip/UgkxmIeqP0H6Y0e5S-3IJMYgbe81cWZjc-Nm?feature=shared' },
+
             // Add more perspectives as needed
         ];
 
