@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function loadVideos() {
         const perspectives = [
-            { name: 'Rick', url: 'https://youtu.be/dQw4w9WgXcQ?feature=shared' },
-            { name: 'Harvest Z', url: 'https://www.youtube.com/watch?v=A7S_G8Z23_M' },
-            { name: 'Dutch', url: 'https://www.youtube.com/watch?v=QON5EM1xhoY' },
+            { name: 'Rick', url: 'https://www.youtube.com/embed/dQw4w9WgXcQ?feature=shared' },
+            { name: 'Harvest Z', url: 'https://www.youtube.com/embed/=A7S_G8Z23_M' },
+            { name: 'Dutch', url: 'https://www.youtube.com/embed/=QON5EM1xhoY' },
             // Add more perspectives as needed
         ];
 
