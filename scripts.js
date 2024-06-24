@@ -6,16 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedValue = event.target.value;
         if (selectedValue) {
             videoElement.src = selectedValue;
-            videoElement.load();
-            videoElement.play();
         }
     });
 
     function loadVideos() {
-        // This will be replaced with actual data fetching logic
         const perspectives = [
-            { name: 'Player 1', url: 'https://your-google-drive-link/video1.mp4' },
-            { name: 'Player 2', url: 'https://your-google-drive-link/video2.mp4' },
+            { name: 'Rick', url: 'https://youtu.be/dQw4w9WgXcQ?feature=shared' },
+            { name: 'Harvest Z', url: 'https://www.youtube.com/watch?v=A7S_G8Z23_M' },
+            { name: 'Dutch', url: 'https://www.youtube.com/watch?v=QON5EM1xhoY' },
             // Add more perspectives as needed
         ];
 
