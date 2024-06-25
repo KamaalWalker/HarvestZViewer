@@ -1,13 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background: linear-gradient(to bottom, #0c0e0d, #ec5f45); /* A nice gradient background */
-    color: #333;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     text-align: center;
 }
 
@@ -16,8 +16,13 @@ header {
 }
 
 header h1 {
-    font-size: 3em; /* Increased font size */
-    color: #444;
+    font-size: 4em; /* Larger font size */
+    font-family: 'Helvetica', sans-serif;
+    color: #fff; /* White color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* White glow */
+    margin: 0;
 }
 
 .container {
@@ -28,18 +33,44 @@ header h1 {
     align-items: center;
 }
 
+.video-wrapper {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;
+    border: 2px solid #fff; /* White border */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Faint white glow */
+}
+
 iframe {
-    margin-bottom: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 select {
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #444; /* Thicker border */
-    border-radius: 5px;
-    background-color: #ffefba; /* Highlighted background color */
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #fff; /* White border */
+    border-radius: 10px;
+    background-color: #444; /* Dark background */
+    color: #fff; /* White text */
     outline: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Subtle white glow */
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+select:hover, select:focus {
+    border-color: #888; /* Slightly lighter border on hover/focus */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4); /* Brighter glow on hover/focus */
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.8em;
+    color: #777;
 }
