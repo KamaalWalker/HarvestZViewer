@@ -27,7 +27,7 @@ header h1 {
 
 header h1 .redZ {
     color: #ff0000; /* Red color */
-    font-size: 4.2em; /* Slightly larger font size */
+    font-size: 3em; /* Slightly larger font size */
 }
 
 .main-container {
@@ -87,28 +87,10 @@ select:hover, select:focus {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Faint white glow */
     padding: 20px;
     background-color: #222; /* Dark background */
+    text-align: left; /* Align text to the left */
 }
 
-#perspectiveList {
-    list-style: none;
-    padding: 0;
+.perspective-list-wrapper h2 {
     margin: 0;
-}
-
-#perspectiveList li {
-    padding: 10px;
-    border-bottom: 1px solid #444; /* Divider */
-    color: #fff;
-}
-
-#perspectiveList li:last-child {
-    border-bottom: none; /* Remove border from last item */
-}
-
-footer {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font-size: 0.8em;
-    color: #777;
+    margin-bottom: 10px;
 }
