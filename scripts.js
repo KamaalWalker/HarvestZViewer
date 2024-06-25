@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const videoElement = document.getElementById('mainVideo');
     const dropdown = document.getElementById('perspectiveDropdown');
+    const perspectiveList = document.getElementById('perspectiveList');
 
     dropdown.addEventListener('change', (event) => {
         const selectedValue = event.target.value;
@@ -16,8 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
             { name: 'Dutch', url: 'https://www.youtube.com/embed/QON5EM1xhoY' },
             { name: 'Lilit Highlight', url: 'https://streamable.com/0x9ro7' },
             { name: 'War Highlight', url: 'https://youtube.com/clip/UgkxmIeqP0H6Y0e5S-3IJMYgbe81cWZjc-Nm?feature=shared' },
-
-            // Add more perspectives as needed
         ];
 
         perspectives.forEach(perspective => {
@@ -25,6 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
             option.value = perspective.url;
             option.text = perspective.name;
             dropdown.add(option);
+
+            const listItem = document.createElement('li');
+            listItem.textContent = perspective.name;
+            perspectiveList.appendChild(listItem);
         });
     }
 
